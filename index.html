@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = "stylesheet" href = "styles1.css">
+  <script src="script1.js"></script>
+  <meta name = "author" content="Yuvraj Saini">
+  <title>Quizzer</title>
+</head>
+
+<body> 
+  <nav>
+    <a href="index.html" class="logo">
+      <h1>
+        <span class="quizzer">Quizzer</span>
+      </h1>
+    </a>
+
+    <ul>
+      <div class="theme">
+        <input type="checkbox" class="checkbox" id="checkbox"/>
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switch"></div>
+        </label>
+      </div>
+
+      <li class="nav-item"> 
+        <a href="page2.html" class="nav-link">Quiz 1</a>
+      </li>
+      <li class="nav-item"> 
+        <a href="page3.html" class="nav-link">Quiz 2</a>
+      </li>
+      <li class="nav-item"> 
+        <a class="nav-link">Quiz 3</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="outer-box">
+    <div class="left-box">
+      <h1>
+        <span class="intro-title">Welcome to Quizzer</span>
+      </h1> <br />
+
+      <p class="intro-text">
+        Quizzer is essentially a place for you to have fun with trivia questions. There are three different quizes 
+        for you to choose from that test your knowledge on those specific subjects. Give them a try and see how you do!
+      </p>
+    </div>
+
+    <div class="right-box">
+      <img src="images/quiz.webp" width="500" height="350">
+    </div>
+  </div>
+
+  <div class="choice">
+    <h1>Choose a Quiz</h1>
+  </div>
+
+  <div class="options">
+    <div class="quiz-num">
+      <h2 class="quiz1-title">Quiz 1: Geography</h2>
+      <br />
+      <p class="quiz1-text">Test your knowledge on the world's countries, landmarks, and cultures. Do you know your 
+                            capital cities from your famous monuments? Can you recognize wonders both natural and 
+                            man-made?</p>
+      <a href="page2.html" class="quiz-but">
+        <h2 class="quiz-but-text">Let's Go</h2>
+      </a>
+    </div>
+
+    <div class="quiz-num">
+      <h2 class="quiz2-title">Quiz 2: Cars</h2>
+      <br />
+      <p class="quiz2-text">If you're a car enthusiast or just love the thrill of speed, you're in for a treat. 
+                            This quiz will test your knowledge of cars, from their logos to their parts and from their
+                            orgins to who their real owners really are.</p>
+      <a href="page3.html" class="quiz-but">
+        <h2 class="quiz-but-text">Let's Go</h2>
+      </a>
+    </div>
+
+    <div class="quiz-num">
+      <h2 class="quiz2-title">Quiz 3</h2>
+      <br />
+      <p class="quiz2-text">Coming Soon!</p>
+      <a class="quiz-but">
+        <h2 class="quiz-but-text">Let's Go</h2>
+      </a>
+    </div>
+  </div>
+
+  <section class="sub">
+    <h2 class="sub-title">Stay Updated!</h2>
+    <h4 class="sub-text">Quizzer gets new quizes every two weeks. Enter your email below if you would like to be 
+      notified everytime new content comes out.</h4>
+    <br />
+    <form action="#">
+      <input type="email" name="email" id="sub-email" class="sub-email" />
+      <input type="submit" id="sub-submit" class="sub-submit" value="Subscribe" />
+    </form>
+  </section>
+
+  <footer>&copy;2023. All Rights Reserved</footer>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+
+</body>
+
+</html>

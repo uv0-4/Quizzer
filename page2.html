@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = "stylesheet" href = "styles2.css">
+  <script src="script1.js"></script>
+  <meta name = "author" content="Yuvraj Saini">
+  <title>Quiz App Landing Page</title>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="logo">
+      <h1>
+        <span class="quizzer">Quizzer</span>
+      </h1>
+    </a>
+
+    <ul>
+      <div class="theme">
+        <input type="checkbox" class="checkbox" id="checkbox"/>
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switch"></div>
+        </label>
+      </div>
+
+      <li class="nav-item"> 
+        <a href="page2.html" class="nav-link">Quiz 1</a>
+      </li>
+      <li class="nav-item"> 
+        <a href="page3.html" class="nav-link">Quiz 2</a>
+      </li>
+      <li class="nav-item"> 
+        <a href="page4.html" class="nav-link">Quiz 3</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="quiz">
+    <h1 class="quiz-text">Quiz 1: Geography</h1>
+  </div>
+
+  <div class="shell" id="shell">
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="question" class="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+      <div id="score" class="score hide">Score</div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn-other">Start</button>
+        <button id="next-btn" class="next-btn btn-other hide">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy;2023. All Rights Reserved</footer>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+</body>
+
+</html>

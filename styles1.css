@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --back-colour: #5CDB95;
+    --primary-color: #05386B;
+    --secondary-color: #379683;
+    --light-color: #EDF5E1;
+    --line-height: 1.7rem;
+    --transition: 0.2s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+body {
+    font-family: "Roboto";
+    background-color: var(--light-color);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.quizzer {
+    color: var(--primary-color);
+}
+
+nav {
+    background: var(--back-colour);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 5px 5px rgb(154, 152, 152);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 3rem;
+}
+
+.nav-link {
+    font-weight: var(--bold-font);
+    font-size: 18px;
+}
+
+.outer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 10% 150px 10%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+.intro-text {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 50px;
+    height: 29px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+}
+
+.switch {
+    background-color: aliceblue;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 4px;
+    border-radius: 50%;
+}
+
+.sun {
+    color: orange;
+}
+
+.moon {
+    color: orange;
+}
+
+.checkbox:checked + .label .switch {
+    transform: translateX(22px);
+}
+
+footer {
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0px -2px 3px rgb(154, 152, 152);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+body.dark h1 {
+    color: var(--back-colour);
+}
+
+body.dark .intro-title {
+    color: var(--back-colour);
+}
+
+body.dark .quiz-num {
+    background-color: var(--secondary-color);
+}
+
+body.dark {
+    background-color: #1e272e;
+}
+  
+body.dark p {
+    color: #fff;
+}
+  
+body.dark nav {
+    box-shadow: 2px 3px 2px #111010;
+}
+
+body.dark footer {
+    color: #fff;
+    border-top: 1px solid #111010;
+    box-shadow: 0px -2px 3px #111010;
+}
+
+.sub {
+    margin: 2rem auto 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 400px;
+    background-color: beige;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.sub h2 {
+    color: var(--primary-color);
+}
+
+.sub h4 {
+    color: var(--primary-color);
+}
+
+.sub-email {
+    padding: 0.2rem;
+    width: 200px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.sub-email:focus {
+    border: 1px solid var(--secondary-color);
+    outline: none;
+}
+
+.sub-submit {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+  
+.sub-submit:hover {
+    background-color: var(--secondary-color);
+}
+
+.choice {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    color: var(--primary-color);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 150px 10%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.quiz-num {
+    background-color: var(--back-colour);
+    border: 5px var(--primary-color);
+    color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    word-wrap: break-word;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.quiz-but {
+    display: inline-block;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 2rem auto 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz-but:hover {
+    background-color: var(--secondary-color);
+}
+
+.quiz-but-text {
+    font-weight: 500;
+}
